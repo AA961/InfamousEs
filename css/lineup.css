@@ -26,6 +26,7 @@
     --ternary:#ff9672;
     --light:#ff7090;
     --secondry:#d05fac;
+    --bg:rgb(249, 248, 113,0.9);
 
 }
 
@@ -58,28 +59,43 @@ section.header1{
     width:100%;
     z-index:1001;
 }
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo img{
+    width: 70px;
+    height: 70px;
+}
 
 nav ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 1.5rem;
+    margin: 1rem;
 }
 
 nav ul li{
     list-style-type: none;
-}
-nav ul li a{
-    font-family: 'Poppins',serif;
-    text-decoration: none;
-    font-size:1rem;
-    color: var(--pure);
-    font-weight: 700;
+    margin-left: 3rem;
 }
 
-nav ul li a:hover{
+.navigation li a{
+    text-decoration: none;
+    padding: 6px 15px;
     color: var(--pure);
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.2s ease-in;
 }
+
+.navigation li a:hover,
+.navigation li a.active{
+    background-color: var(--pure);
+    color: var(--primary);
+}
+
 section.hero1{
     background: var(--dark);
 
@@ -317,6 +333,55 @@ footer .footer-social a img:hover{
         max-width: 1152px;
     }
 }
+@media(max-width: 930px){
+    nav ul{
+        display: none;
+    }
+    .toggle{
+        background: url(../static/ham/menu.png);
+        position: fixed;
+        right: 30px;
+        top: 40px;
+        width: 40px;
+        height: 30px;
+        cursor: pointer;
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 10000001;
+        transition: all 0.2s ease-in-out;
+    }
+    .toggle.active{
+        background: url(../static/ham/close.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .navigation.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background: var(--primary);
+    }
+    .navigation.active li{
+        margin-left: 0;
+    }
+    .navigation.active li a{
+        margin: 5px;
+        display: inline-block;
+        font-size: 1.2rem;
+    }
+    .navigation.active li a:hover{
+        background-color: var(--primary);
+        color: var(--pure);
+    }
+}
 @media (max-width:576px){
     section{
         padding: 2rem 0;
@@ -328,15 +393,7 @@ footer .footer-social a img:hover{
         grid-template-columns: repeat(1,1fr);
         margin: 1rem;
     }
-    section.contact .about-icons .about-icon img{
-        margin-bottom: 0%;
-        margin-top: 2rem;
-    }
-    section.contact .inputs{
-        grid-template-columns: repeat(1,1fr);
-        grid-gap: 0;
-        margin:0;
-    }
+    
     footer{
         align-items: center;
         justify-content: center;
