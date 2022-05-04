@@ -10,5 +10,5 @@ toggleMenu.onclick = function(){
 
 navigation.addEventListener('click',function(){
     navigation.classList.remove('active')
-    toggleMenu.classList.toggle('active')
+    toggleMenu.classList.remove('active')
 })
