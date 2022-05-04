@@ -367,6 +367,7 @@ footer .footer-social a img:hover{
         justify-content: center;
         align-items: center;
         background: var(--primary);
+        transition: all 0.5s ease-in-out;
     }
     .navigation.active li{
         margin-left: 0;
