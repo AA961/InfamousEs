@@ -354,6 +354,7 @@ footer .footer-social a img:hover{
         background: url(../static/ham/close.png);
         background-size: 25px;
         background-position: center;
+        z-index: 1000000000;
         background-repeat: no-repeat;
     }
     .navigation.active{
@@ -386,8 +387,12 @@ footer .footer-social a img:hover{
     section{
         padding: 2rem 0;
     }
+    section.hero1 .main-img img {
+        width: 100%;
+        margin: 1rem auto;
+      }
     section.hero1 .main-content p{
-        margin-top: -3rem;
+        margin-top: 1rem;
     }
     section.blog .card-wrapper{
         grid-template-columns: repeat(1,1fr);
