@@ -378,10 +378,6 @@ footer .footer-social a img:hover{
         display: inline-block;
         font-size: 1.2rem;
     }
-    .navigation.active li a:hover{
-        background-color: var(--primary);
-        color: var(--pure);
-    }
 }
 @media (max-width:576px){
     section{
