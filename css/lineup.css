@@ -129,7 +129,6 @@ section.result .tournament-img{
 
 }
 section.result .tournament-img img{
-    aspect-ratio: 16/9;
     width: 100%;
 }
 section.result .tournament-img h3{
