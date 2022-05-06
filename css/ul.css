@@ -1,4 +1,16 @@
+.heading{
+    color: var(--secondry);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+.heading span{
+    color: var(--primary);
+}
 
+section{
+    padding: 4rem 0;
+}
 .grid{
     display: grid;
 }

@@ -10,16 +10,8 @@
     
 }
 
-:root{
-    --primary:#C3073F;
-    --dark:#1A1A1D;
-    --pure:#FFFFFF;
-    --ternary:#4E4E50;
-    --light:#F2F2F2;
-    --secondry:#070606;
 
-}
-.root{
+.yellow-theme{
     --primary:#805db9;
     --dark:#f9f871;
     --pure:#ffc760;
@@ -27,7 +19,14 @@
     --light:#ff7090;
     --secondry:#d05fac;
     --bg:rgb(249, 248, 113,0.9);
-
+}
+.red-theme{
+    --primary:#C3073F;
+    --dark:#1A1A1D;
+    --pure:#FFFFFF;
+    --ternary:#4E4E50;
+    --light:#F2F2F2;
+    --secondry:#070606;
 }
 
 .container{
@@ -35,22 +34,11 @@
     padding: 0 15px;
     margin: 0 auto;
 }
-.heading{
-    color: var(--secondry);
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 3rem;
-}
-.heading span{
-    color: var(--primary);
-}
 
-section{
-    padding: 4rem 0;
-}
 body{
     font-family: 'Poppins',sans-serif;
 }
+
 section.header1{
     background-color: var(--secondry);
     padding: 1rem;
@@ -276,7 +264,7 @@ footer{
     background-color: var(--secondry);
     text-align: center;
     padding: 2.5rem 0;
-    color: var(--primary);
+    color: var(--pure);
     
 }
 
