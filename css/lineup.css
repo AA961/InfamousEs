@@ -90,7 +90,7 @@ section.hero1{
 }
 section.hero1 .main-img img{
  width: 100%;
- margin-top: -3rem;
+ margin-top: -6rem;
 }
 
 section.hero1 .main-content p{
@@ -99,6 +99,7 @@ section.hero1 .main-content p{
     padding: 1rem 0.5rem;
     font-family: 'M PLUS Code Latin',sans-serif;
     margin-top: -7rem;
+    text-align: center;
 }
 section.result{
     background-color: var(--pure);
@@ -381,7 +382,7 @@ footer .footer-social a img:hover{
     }
     section.hero1 .main-img img {
         width: 100%;
-        margin: 1rem auto;
+        margin: auto;
       }
     section.hero1 .main-content p{
         margin-top: 1rem;
